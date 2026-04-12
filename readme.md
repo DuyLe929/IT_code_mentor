@@ -1,30 +1,51 @@
-# 🦙 IT Code Mentor - Llama 3.3 Optimized System
+# 🦙 IT Code Mentor - Intelligent Programming Assistant
 
-**IT Code Mentor** là một ứng dụng hỗ trợ học tập thông minh dành cho sinh viên CNTT (đặc biệt là sinh viên AIT - VNU-IS). Hệ thống sử dụng mô hình ngôn ngữ lớn **Llama 3.3** thông qua hạ tầng **Groq LPU** để phân tích, sửa lỗi và tối ưu hóa mã nguồn theo tiêu chuẩn công nghiệp.
+**IT Code Mentor** là một hệ thống hỗ trợ học tập thông minh dành riêng cho sinh viên ngành Công nghệ thông tin (đặc biệt là sinh viên AIT - VNU-IS). Hệ thống ứng dụng mô hình ngôn ngữ lớn **Llama 3.3 (70B)** kết hợp với hạ tầng siêu máy tính **Groq LPU** để cung cấp các giải pháp tối ưu hóa mã nguồn tức thì.
 
-## 🚀 Tính năng nổi bật
+## 🎯 Mục tiêu dự án
+Dự án được xây dựng nhằm giải quyết bài toán "hỗ trợ giáo dục cá nhân hóa", đóng vai trò như một Mentor ảo 24/7 giúp sinh viên:
+- Sửa lỗi logic và cú pháp trong mã nguồn.
+- Tiếp cận các tiêu chuẩn viết code sạch (**Clean Code**).
+- Hiểu sâu về tối ưu thuật toán thông qua phân tích độ phức tạp thời gian **Big O ($O(n)$)**.
 
-- **Phân tích lỗi Logic:** Phát hiện các lỗi sai về tư duy lập trình và các trường hợp biên (edge cases).
-- **Đánh giá Clean Code:** Nhận xét về phong cách lập trình, cách đặt tên biến và cấu trúc mã nguồn theo chuẩn chuyên nghiệp.
-- **Tối ưu hóa thuật toán:** Đề xuất phiên bản mã nguồn tối ưu hơn và giải thích độ phức tạp thời gian bằng ký pháp **Big O ($O(n)$)**.
-- **Hỗ trợ đa ngôn ngữ:** Làm việc hiệu quả với Python, C++, và Java.
-- **Tốc độ phản hồi cực nhanh:** Sử dụng hạ tầng Groq giúp việc suy luận AI diễn ra gần như tức thì.
+## 🚀 Tính năng chính
+- **Logic Debugging:** Phát hiện và sửa lỗi thực thi nhanh chóng.
+- **Code Refactoring:** Tái cấu trúc mã nguồn để tăng tính dễ đọc và bảo trì.
+- **Performance Analysis:** Phân tích và đề xuất thuật toán tối ưu hơn (ví dụ: chuyển từ $O(n^2)$ sang $O(n \log n)$).
+- **Multi-language Support:** Hỗ trợ tốt nhất cho Python, C++, và Java.
 
 ## 🛠️ Công nghệ sử dụng
-
-- **Ngôn ngữ:** Python
-- **Framework:** [Streamlit](https://streamlit.io/) (Giao diện người dùng)
-- **AI Engine:** [Llama 3.3 70B Versatile](https://ai.meta.com/llama/)
-- **Inference Infrastructure:** [Groq Cloud API](https://groq.com/) (LPU Technology)
-- **Quản lý môi trường:** Python-dotenv
+- **Backend:** Python & Streamlit.
+- **AI Engine:** Llama-3.3-70b-versatile (via Groq API).
+- **Security:** Quản lý mã khóa qua biến môi trường (.env) và bảo vệ mã nguồn (.gitignore).
 
 ## 📦 Hướng dẫn cài đặt
 
-Để chạy dự án này trên máy cục bộ (Local Machine), hãy thực hiện các bước sau:
-
-1. **Clone repository:**
+### Cách 1: Sử dụng Git Clone
+1. Clone repository:
    ```bash
-   git clone [https://github.com/your-username/it-code-mentor.git](https://github.com/your-username/it-code-mentor.git)
-   cd it-code-mentor
+   git clone [https://github.com/DuyLe929/IT_code_mentor.git](https://github.com/DuyLe929/IT_code_mentor.git)
+   cd IT_code_mentor
+   ```
+2. Tạo và kích hoạt môi trường ảo:
+    Windows: python -m venv venv sau đó .\venv\Scripts\activate
+    macOS/Linux: python3 -m venv venv sau đó source venv/bin/activate
 
-2.
+### Cách 2: Tải thủ công 
+    Truy cập vào Repository này, nhấn Code -> Download ZIP.
+    Giải nén và mở Terminal tại thư mục vừa giải nén. 
+
+## 🚀 Cách sử dụng 
+1. Cài đặt thư viện:
+
+    pip install -r requirements.txt
+
+2. Cấu hình API Key:
+
+    Tạo file .env tại thư mục gốc.
+
+    Thêm dòng: GROQ_API_KEY=your_key_here (Lấy key tại console.groq.com).
+
+3. Chạy ứng dụng:
+
+    streamlit run app.py

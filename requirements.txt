@@ -1,3 +1,5 @@
-streamlit
-groq
-python-dotenv
+streamlit==1.56.0
+groq==1.1.2
+python-dotenv==1.2.2
+pandas
+numpy
