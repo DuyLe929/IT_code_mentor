@@ -19,9 +19,9 @@ Dự án được xây dựng nhằm giải quyết bài toán "hỗ trợ giáo
 - **AI Engine:** Llama-3.3-70b-versatile (via Groq API).
 - **Security:** Quản lý mã khóa qua biến môi trường (.env) và bảo vệ mã nguồn (.gitignore).
 
-## 📦 Hướng dẫn cài đặt
+### 📦 Hướng dẫn cài đặt
 
-### Cách 1: Sử dụng Git Clone
+## Cách 1: Sử dụng Git Clone
 1. Clone repository:
    ```bash
    git clone [https://github.com/DuyLe929/IT_code_mentor.git](https://github.com/DuyLe929/IT_code_mentor.git)
@@ -31,11 +31,11 @@ Dự án được xây dựng nhằm giải quyết bài toán "hỗ trợ giáo
     Windows: python -m venv venv sau đó .\venv\Scripts\activate
     macOS/Linux: python3 -m venv venv sau đó source venv/bin/activate
 
-### Cách 2: Tải thủ công 
+## Cách 2: Tải thủ công 
     Truy cập vào Repository này, nhấn Code -> Download ZIP.
     Giải nén và mở Terminal tại thư mục vừa giải nén. 
 
-## 🚀 Cách sử dụng 
+### 🚀 Cách sử dụng 
 1. Cài đặt thư viện:
 
     pip install -r requirements.txt
@@ -48,4 +48,4 @@ Dự án được xây dựng nhằm giải quyết bài toán "hỗ trợ giáo
 
 3. Chạy ứng dụng:
 
-    streamlit run app.py
+    python -m streamlit run app.py
