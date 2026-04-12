@@ -39,6 +39,7 @@ Dự án được xây dựng nhằm giải quyết bài toán "hỗ trợ giáo
             source venv/bin/activate
     ```
 ## Cách 2: Tải thủ công 
+
     Truy cập vào Repository này, nhấn Code -> Download ZIP.
     Giải nén và mở Terminal tại thư mục vừa giải nén. 
 
@@ -47,12 +48,11 @@ Dự án được xây dựng nhằm giải quyết bài toán "hỗ trợ giáo
 ```bash
     pip install -r requirements.txt
 ```
-2. Cấu hình API Key:
+2. Cấu hình API Key (Lấy key tại console.groq.com):
     Tạo file .env tại thư mục gốc.
 ```bash Thêm dòng:
     GROQ_API_KEY=your_key_here 
 ```
-    (Lấy key tại console.groq.com).
 3. Chạy ứng dụng:
 ```bash
     python -m streamlit run app.py
