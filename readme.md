@@ -26,18 +26,18 @@ Dự án được xây dựng nhằm giải quyết bài toán "hỗ trợ giáo
    ```bash
    git clone [https://github.com/DuyLe929/IT_code_mentor.git](https://github.com/DuyLe929/IT_code_mentor.git)
    cd IT_code_mentor
-   ```
+
 2. Tạo và kích hoạt môi trường ảo:
     Windows: 
     ```bash
-            python -m venv venv 
-            .\venv\Scripts\activate
-    ```
+        python -m venv venv 
+        .\venv\Scripts\activate
+
     macOS/Linux: 
     ```bash
-            python3 -m venv venv 
-            source venv/bin/activate
-    ```
+        python3 -m venv venv 
+        source venv/bin/activate
+
 ## Cách 2: Tải thủ công 
 
     Truy cập vào Repository này, nhấn Code -> Download ZIP.
@@ -47,13 +47,16 @@ Dự án được xây dựng nhằm giải quyết bài toán "hỗ trợ giáo
 1. Cài đặt thư viện:
 ```bash
     pip install -r requirements.txt
-```
+
 2. Cấu hình API Key (Lấy key tại console.groq.com):
-    Tạo file .env tại thư mục gốc.
+
+
+Tạo file .env tại thư mục gốc.
+
+
 ```bash Thêm dòng:
     GROQ_API_KEY=your_key_here 
-```
+
 3. Chạy ứng dụng:
 ```bash
     python -m streamlit run app.py
-```
