@@ -28,24 +28,31 @@ Dự án được xây dựng nhằm giải quyết bài toán "hỗ trợ giáo
    cd IT_code_mentor
    ```
 2. Tạo và kích hoạt môi trường ảo:
-    Windows: python -m venv venv sau đó .\venv\Scripts\activate
-    macOS/Linux: python3 -m venv venv sau đó source venv/bin/activate
-
+    Windows: 
+    ```bash
+            python -m venv venv 
+            .\venv\Scripts\activate
+    ```
+    macOS/Linux: 
+    ```bash
+            python3 -m venv venv 
+            source venv/bin/activate
+    ```
 ## Cách 2: Tải thủ công 
     Truy cập vào Repository này, nhấn Code -> Download ZIP.
     Giải nén và mở Terminal tại thư mục vừa giải nén. 
 
 ### 🚀 Cách sử dụng 
 1. Cài đặt thư viện:
-
+```bash
     pip install -r requirements.txt
-
+```
 2. Cấu hình API Key:
-
+```bash 
     Tạo file .env tại thư mục gốc.
-
     Thêm dòng: GROQ_API_KEY=your_key_here (Lấy key tại console.groq.com).
-
+```
 3. Chạy ứng dụng:
-
+```bash
     python -m streamlit run app.py
+```
