@@ -48,10 +48,11 @@ Dự án được xây dựng nhằm giải quyết bài toán "hỗ trợ giáo
     pip install -r requirements.txt
 ```
 2. Cấu hình API Key:
-```bash 
     Tạo file .env tại thư mục gốc.
-    Thêm dòng: GROQ_API_KEY=your_key_here (Lấy key tại console.groq.com).
+```bash Thêm dòng:
+    GROQ_API_KEY=your_key_here 
 ```
+    (Lấy key tại console.groq.com).
 3. Chạy ứng dụng:
 ```bash
     python -m streamlit run app.py
