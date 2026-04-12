@@ -23,40 +23,40 @@ Dự án được xây dựng nhằm giải quyết bài toán "hỗ trợ giáo
 
 ## Cách 1: Sử dụng Git Clone
 1. Clone repository:
-   ```bash
-   git clone [https://github.com/DuyLe929/IT_code_mentor.git](https://github.com/DuyLe929/IT_code_mentor.git)
-   cd IT_code_mentor
+```bash
+git clone [https://github.com/DuyLe929/IT_code_mentor.git](https://github.com/DuyLe929/IT_code_mentor.git)
+cd IT_code_mentor
+```
 
 2. Tạo và kích hoạt môi trường ảo:
-    Windows: 
-    ```bash
-        python -m venv venv 
-        .\venv\Scripts\activate
-
-    macOS/Linux: 
-    ```bash
-        python3 -m venv venv 
-        source venv/bin/activate
-
+Windows: 
+```bash
+    python -m venv venv 
+    .\venv\Scripts\activate
+```
+macOS/Linux: 
+```bash
+    python3 -m venv venv 
+    source venv/bin/activate
+```
 ## Cách 2: Tải thủ công 
 
-    Truy cập vào Repository này, nhấn Code -> Download ZIP.
-    Giải nén và mở Terminal tại thư mục vừa giải nén. 
+Truy cập vào Repository này, nhấn Code -> Download ZIP.
+Giải nén và mở Terminal tại thư mục vừa giải nén. 
 
 ### 🚀 Cách sử dụng 
 1. Cài đặt thư viện:
 ```bash
-    pip install -r requirements.txt
-
+pip install -r requirements.txt
+```
 2. Cấu hình API Key (Lấy key tại console.groq.com):
-
 
 Tạo file .env tại thư mục gốc.
 
-
 ```bash Thêm dòng:
-    GROQ_API_KEY=your_key_here 
-
+GROQ_API_KEY=your_key_here 
+```
 3. Chạy ứng dụng:
 ```bash
-    python -m streamlit run app.py
+python -m streamlit run app.py
+```
